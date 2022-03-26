@@ -20,4 +20,4 @@ console.log(arrowSoma2(6,12))
 
 //Retorno implícito com um parâmetro apenas
 const arrowMostraA = a => a;
-console.log(arrowMostraA('oiii'))
+console.log(arrowMostraA('oiii '))
