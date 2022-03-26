@@ -1,5 +1,7 @@
 // recurso novo no ES2015
 
+//destructuring - OBJ
+
 const pessoa = {
     nome: 'João',
     idade: 24,
