@@ -5,6 +5,7 @@
 // Exemplo:
 // String: “10 20 20 8 25 3 0 30 1”
 // Retorno: [3, 7] (Significa que ele bateu três vezes seu recorde de melhor pontuação e a pior pontuação aconteceu no sétimo jogo.)
+const pontuacoes = [10, 20, 20, 8, 25, 3, 0, 30, 1]
 
 progresso = (pontuacoes) => {
     let retorno = []
@@ -21,5 +22,23 @@ progresso = (pontuacoes) => {
     retorno.push(posicao)
     console.log(retorno)
 }
-const pontuacoes = [10, 20, 20, 8, 25, 3, 0, 30, 1]
 progresso(pontuacoes)
+
+let Pont = [30, 40, 20, 4, 51, 25, 42, 38, 56, 0]
+progresso2 = (Pont) =>{
+    let retorno = [];
+    let recordeAtual = 0;
+    let recorde = 0;
+    for (let i = 0; i <= Pont.length; i++){
+        if (Pont.indexOf(i) < Pont.indexOf(i + 1)){
+            recorde++
+        }
+    }
+    console.log(recorde)
+    const min = Math.min(...pontuacoes)
+    const posicao = pontuacoes.indexOf(min) + 1
+    retorno.push(recorde)
+    retorno.push(posicao)
+    console.log(retorno)
+}
+progresso2(Pont)
