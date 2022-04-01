@@ -10,7 +10,7 @@ progresso = (pontuacoes) => {
     let retorno = []
     let recorde = 0;
     for (let i = 0; i <= pontuacoes.length; i++){
-        if (pontuacoes.indexOf(i) != -1 && pontuacoes.indexOf(i+1) < pontuacoes.indexOf(i)){
+        if (pontuacoes.indexOf(i+1) < pontuacoes.indexOf(i)){
             recorde++
         }
     }
