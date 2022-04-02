@@ -5,40 +5,28 @@
 // Exemplo:
 // String: “10 20 20 8 25 3 0 30 1”
 // Retorno: [3, 7] (Significa que ele bateu três vezes seu recorde de melhor pontuação e a pior pontuação aconteceu no sétimo jogo.)
-const pontuacoes = [10, 20, 20, 8, 25, 3, 0, 30, 1]
 
-progresso = (pontuacoes) => {
-    let retorno = []
-    let recorde = 0;
-    for (let i = 0; i <= pontuacoes.length; i++){
-        if (pontuacoes.indexOf(i+1) < pontuacoes.indexOf(i)){
-            recorde++
+// let stringPontuacoes = "30, 40, 20, 4, 51, 25, 42, 38, 56, 0"
+let stringPontuacoes = '10, 20, 20, 8, 25, 3, 0, 30, 1'
+ 
+ 
+function avaliaPontuacoes (stringPontuacoes) {
+    let pontuacoes = stringPontuacoes.split(", ")
+    let qtdQuebraDeRecords = 0
+    let piorJogo = 1
+    let maiorPontuacao = pontuacoes[0]
+    let menorPontuacao = pontuacoes[0]
+
+    for (let i = 1; i < pontuacoes.length; i++) {
+        if(pontuacoes[i] > maiorPontuacao) {
+            maiorPontuacao = pontuacoes[i]
+            qtdQuebraDeRecords++
+        }else if (pontuacoes[i] < menorPontuacao) {
+            menorPontuacao = pontuacoes[i]
+            piorJogo = i+1;
         }
     }
-
-    const min = Math.min(...pontuacoes)
-    const posicao = pontuacoes.indexOf(min) + 1
-    retorno.push(recorde)
-    retorno.push(posicao)
-    console.log(retorno)
+    return [qtdQuebraDeRecords, piorJogo]
 }
-progresso(pontuacoes)
-
-let Pont = [30, 40, 20, 4, 51, 25, 42, 38, 56, 0]
-progresso2 = (Pont) =>{
-    let retorno = [];
-    let recordeAtual = 0;
-    let recorde = 0;
-    for (let i = 0; i <= Pont.length; i++){
-        if (Pont.indexOf(i) < Pont.indexOf(i + 1)){
-            recorde++
-        }
-    }
-    console.log(recorde)
-    const min = Math.min(...pontuacoes)
-    const posicao = pontuacoes.indexOf(min) + 1
-    retorno.push(recorde)
-    retorno.push(posicao)
-    console.log(retorno)
-}
-progresso2(Pont)
+ 
+console.log(avaliaPontuacoes(stringPontuacoes))
