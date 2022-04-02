@@ -1,0 +1,10 @@
+// Faça um algoritmo que calcule o fatorial de um número.
+
+fatorial = num => {
+    let fatorial = 0;
+    for (let i = num; i <= num; i--){
+        fatorial = num * i
+    }
+    console.log(fatorial)
+}
+fatorial(6)
