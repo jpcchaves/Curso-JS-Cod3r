@@ -1,0 +1,10 @@
+const converte = ano => ano * 365
+console.log(converte(1))
+console.log(converte(2))
+console.log(converte(3))
+console.log(converte(4))
+console.log(converte(5))
+console.log(converte(6))
+console.log(converte(7))
+console.log(converte(25))
+console.log(converte(70))
