@@ -1,0 +1,17 @@
+{
+  "name": "funcionarios",
+  "version": "1.0.0",
+  "description": "projeto-funcionarios-curso-cod3r",
+  "main": "outro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "palavras-reservadas"
+  ],
+  "author": "joaoPaulo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}
