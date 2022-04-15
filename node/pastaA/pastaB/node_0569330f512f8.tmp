@@ -1,0 +1,16 @@
+// Como acessar um modulo que está nas pastas externas?
+// PastaB -> PastaA -> pastaNode
+
+    // Caminho relativo
+const moduloA = require('../../moduloA')
+console.log(moduloA.ola)
+
+
+    // Pegando o módulo HTTP
+    const http = require('http')
+    http.createServer((req, res) => {
+        res.write('bom dia!')
+        res.end()
+    }).listen (8080)
+
+
