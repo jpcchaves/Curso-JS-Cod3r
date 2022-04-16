@@ -19,7 +19,7 @@ const axios = require('axios')
 
 axios.get(url).then(response => {
     const funcionarios = response.data
-    console.log(funcionarios)
+    // console.log(funcionarios)
 
     // Mulher chinesa com o menor salário
     const func = funcionarios
