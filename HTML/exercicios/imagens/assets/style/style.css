@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(58, 122, 249);
+}
+
+.flex-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.owl-carousel {
+    width: 100%;
+}
+
+img{
+    background-size: cover;
+}
