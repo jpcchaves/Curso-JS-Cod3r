@@ -6,6 +6,34 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+
+        /* Ordem de Especificidade
+            1- !important (não recomendado)
+
+            2- seletores mais específicos
+
+            3- o último elemento processado tem maior prioridade
+        
+        */
+
+        p{
+            background-color: #aaa;
+        }
+
+        .observacao {
+            background-color: #f5f;
+            border: dashed 3px;
+            padding: 20px;
+            font-size: 40px;
+        }
+
+        /* Seletor mais especifico */
+        /* Ganha do acima */
+        p.observacao {
+            padding: 2px;
+            background: linear-gradient(to right, red, transparent);
+        }
+
     </style>
 </head>
 
