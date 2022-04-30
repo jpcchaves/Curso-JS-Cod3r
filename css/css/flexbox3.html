@@ -6,7 +6,30 @@
     <title>Flexbox #03</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        .flex-container div {
+            box-sizing: border-box;
+        }
+
+        .flex-container{
+            display: flex;
+        }
+
+        /* Largura do elemento */
+        .flex-container div {
+            width: 20000000000px; /* quem ganha é o flex-basis*/
+            flex-basis: 100px;
+        }
+
+        .flex-container div:nth-child(4){
+            /*flex shortcut for grow, shrink basis*/
+            flex: 3 6 100px;
+        }
+
+        .flex-container {
+            width: 300px;
+            width: 600px;
+        }
+
     </style>
 </head>
 
