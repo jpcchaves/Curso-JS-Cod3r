@@ -9,8 +9,30 @@
     <div id="primeiro">#primeiro</div>
     <div>Segundo</div>
     <div class="terceiro ultimo">.terceiro .ultimo</div>
-    <script>              
-        // ...
+    <script>      
+        // adicionando a classe destaque no elemento. Automaticamente ele vai receber o estilo ligado a essa classe 
+        document.getElementById('primeiro').classList.add('destaque')
+
+        // Selecionando TODAS as divs (retorna uma lista)
+        const divs = document.getElementsByTagName('div')
+        // Removendo a class "destaque"
+        Array.from(divs).forEach(e => e.classList.remove('destaque'))
+
+        // Transformando em um array
+        const divsArray = [...divs]
+        
+        // Adicionando a classe destaque em todos
+        divsArray.forEach(e => e.classList.add('destaque'))
+
+
+        // Capturando os elementos byClassName (retorna uma lista)
+        
+        const ultimosElementos = document.getElementsByClassName('ultimo')
+
+        for (let e of ultimosElementos){
+            e.classList.remove('destaque')
+        }
+
     </script>
 </body>
 </html>
