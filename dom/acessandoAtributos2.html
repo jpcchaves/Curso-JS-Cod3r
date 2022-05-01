@@ -17,7 +17,29 @@
         </ul>
     </div>
     <script>
-        // ...
+        const lista = document.querySelector('div ul[destino="escritório"]')
+        console.log('Elemento UL......')
+        // Nós da lista
+        console.log('childNodes', lista.childNodes)
+        // acessando o ID
+        console.log('destino', lista.id)
+
+        // Acessando o atributo personalizado
+        console.log('getAttribute', lista.getAttribute('destino'))
+
+        // ver se um elemento está ou não no elemento
+        console.log('hasAttribute', lista.hasAttribute('destino'))
+
+        // setando um novo atributo
+        // substitui "destino" por "empresa"
+        console.log('setAttribute', lista.setAttribute('destino', 'empresa'))
+        
+        // adicionando um novo atributo
+        lista.setAttribute('status', 'aberto')
+
+        // Removendo um atributo
+        lista.removeAttribute('destino')
+
     </script>
 </body>
 
