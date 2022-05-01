@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 
 <head>
@@ -31,7 +31,20 @@
         <button>Pesquisar</button>
     </form>
     <script>
-        // ...
+        console.log(document.forms)
+        console.log(document.forms[0])
+        // Opção mais interessante
+        console.log(document.pesquisa)
+        console.log(document.pesquisa.q)
+
+        // selecionando um input
+        document.pesquisa.q.value = 'Alterando o campo'
+
+        document.pesquisa.hl.value = 'en-us'
+
+        // Pegando o indice selecionado
+        console.log(document.pesquisa.hl.selectedIndex)
+
     </script>
 </body>
 
