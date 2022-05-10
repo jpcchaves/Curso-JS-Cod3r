@@ -49,6 +49,35 @@
     </form>
 
     <script>
-        // ...
+        // Adicionando class ao elemento com id Feira
+         $('#feira').addClass('destaque').removeClass('destaque')
+
+         $('li').addClass('destaque')
+
+         $('[wm-obrigatorio]').removeClass('destaque')
+
+         $('li.opcional').removeClass('destaque')
+
+         $('div p span').addClass('destaque')
+
+        //  Seletores/Filtros exclusivos do jQuery
+        $('li:first').css('border', '3px solid yellow')
+        // impares
+        $('li:odd').css('border', '10px solid orange')
+        // greaterThan (maior que o elemento ....)
+        $('li:gt(1)').css('border', '10px solid blue')
+        // not(:last) pega todos menos o último
+        $('li:not(:last)').css('border', 'none')
+        // se dentro de algum determinado elemento CONTÉM ALGUM ELEMENTO
+        $('li:contains("r")').css('background-color', '#444')
+
+        // Filtros de form
+        $('form *').hide()
+        $('form :text').show()
+        $('form :password').show()
+        $('form :checkbox').show()
+        $('form :radio').show()
+        $('form :').show()
+    
     </script>
 </body>
