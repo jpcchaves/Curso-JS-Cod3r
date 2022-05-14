@@ -1,0 +1,14 @@
+{
+    "users":[{
+        "id": 1,
+        "name": "João Paulo de Castro Chaves",
+        "email": "joaopaulodecastrochaves@hotmail.com"
+    },{
+        "id": 2,
+        "name": "Zezinho da Silva",
+        "email": "zezinho-da-silva@hotmail.com"
+    }]
+
+
+
+}
