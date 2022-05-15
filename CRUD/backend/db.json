@@ -1,14 +1,19 @@
 {
-    "users":[{
-        "id": 1,
+  "users": [
+    {
         "name": "João Paulo de Castro Chaves",
-        "email": "joaopaulodecastrochaves@hotmail.com"
-    },{
-        "id": 2,
+        "email": "joaopaulodecastrochaves@hotmail.com",
+        "id": 1
+    },
+    {
         "name": "Zezinho da Silva",
-        "email": "zezinho-da-silva@hotmail.com"
-    }]
-
-
-
+        "email": "zezinho-da-silva@hotmail.com",
+        "id": 2
+    },
+    {
+      "name": "Joao Paulo",
+      "email": "sdfds@hotmail.com",
+      "id": 3
+    }
+  ]
 }
